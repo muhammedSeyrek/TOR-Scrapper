@@ -1,0 +1,498 @@
+    <!DOCTYPE html>
+    <html lang="tr">
+    <head>
+	<script type="text/javascript" src="https://webkodu.ozgurlukicin.com/kod-kaynak/wk-kar-efekt.js"></script>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="OEA Community">
+<link rel="shortcut icon" type="image/x-icon" href="/apps/main/public/assets/img/extras/favicon.png?cache=1680087374">
+
+
+<title>OEA Community</title>
+
+<meta name="description" content="OEA Community" />
+<meta name="keywords" content="OEA">
+<link rel="canonical" href="" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="OEA Community -  :'" />
+<meta property="og:description" content="OEA Community" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="OEA Community" />
+
+<!-- EXTRAS -->
+<link rel="stylesheet" href="asset//ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css">
+<link rel="stylesheet" href="asset//ajax/libs/select2/4.0.13/css/select2.min.css">
+<link rel="stylesheet" href="asset//npm/@ttskch/select2-bootstrap4-theme@1.4.0/dist/select2-bootstrap4.min.css">
+<link rel="stylesheet" href="asset/css/logindeki.css">
+<link rel="stylesheet" href="logindeki.css">
+
+
+<!-- THEMES -->
+<link rel="stylesheet" type="text/css" href="asset//apps/main/public/assets/css/themes/custom/app.css">
+<link rel="stylesheet" type="text/css" href="asset//apps/main/public/assets/css/themes/custom/bootstrap-grid.min.css">
+<link rel="stylesheet" type="text/css" href="asset//apps/main/public/assets/css/themes/custom/edit.css">
+
+<link rel="stylesheet" href="asset//tippy.js@6/animations/scale.css"/>
+<!-- AlpineJS Tooltip Plugin -->
+<script src="asset//npm/@ryangjchandler/alpine-tooltip@1.x.x/dist/cdn.min.js" defer></script>
+<!-- AlpineJS Core -->
+<script defer src="asset//alpinejs@3.10.3/dist/cdn.min.js"></script>
+<!-- Fast Average Color Plugin -->
+<script src="asset//fast-average-color/dist/index.browser.min.js"></script>
+
+<script src="asset//apps/main/public/assets/js/main.js"></script>
+
+
+<style>
+  .header-banner {
+    background: url(/apps/main/public/assets/img/extras/header-bg.png?cache=1672339516) no-repeat center center #212b38;
+  }
+</style>
+
+<!-- COLORS -->
+<!--	<style type="text/css">
+							body {
+									background-color:#f8f8f8;							}
+					a {
+									color:#007bff;							}
+					a:active, a:hover, a:focus {
+									color:#0056b3;							}
+					.color-main {
+									color:#c469fc;							}
+					.color-main:hover {
+									color:#c469fc;							}
+					.color-primary {
+									color:#5e72e4;							}
+					.color-primary:hover {
+									color:#324cdd;							}
+					.color-success {
+									color:#2dce89;							}
+					.color-success:hover {
+									color:#24a46d;							}
+					.color-danger {
+									color:#f5365c;							}
+					.color-danger:hover {
+									color:#ec0c38;							}
+					.color-warning {
+									color:#fb6340;							}
+					.color-warning:hover {
+									color:#fa3a0e;							}
+					.color-info {
+									color:#11cdef;							}
+					.color-info:hover {
+									color:#0da5c0;							}
+					.btn-primary, .badge-primary, .alert-primary, .bg-primary {
+									background-color:#5e72e4;							}
+					.btn-success, .badge-success, .alert-success, .bg-success {
+									background-color:#2dce89;							}
+					.btn-danger, .badge-danger, .alert-danger, .bg-danger {
+									background-color:#f5365c;							}
+					.btn-warning, .badge-warning, .alert-warning, .bg-warning {
+									background-color:#fb6340;							}
+					.btn-info, .badge-info, .alert-info, .bg-info {
+									background-color:#11cdef;							}
+					.text-primary {
+									color:#5e72e4 !important;							}
+					.text-success {
+									color:#2dce89 !important;							}
+					.text-danger {
+									color:#f5365c !important;							}
+					.text-warning {
+									color:#fb6340 !important;							}
+					.text-info {
+									color:#11cdef !important;							}
+					.btn-primary {
+									border-color:#5e72e4;							}
+					.btn-primary.active, .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+									border-color:#324cdd;									background-color:#324cdd;							}
+					.btn-success {
+									border-color:#2dce89;							}
+					.btn-success.active, .btn-success:active, .btn-success:hover, .btn-success:focus {
+									border-color:#24a46d;									background-color:#24a46d;							}
+					.btn-danger {
+									border-color:#f5365c;							}
+					.btn-danger.active, .btn-danger:active, .btn-danger:hover, .btn-danger:focus {
+									border-color:#ec0c38;									background-color:#ec0c38;							}
+					.btn-warning {
+									border-color:#fb6340;							}
+					.btn-warning.active, .btn-warning:active, .btn-warning:hover, .btn-warning:focus {
+									border-color:#fa3a0e;									background-color:#fa3a0e;							}
+					.btn-info {
+									border-color:#11cdef;							}
+					.btn-info.active, .btn-info:active, .btn-info:hover, .btn-info:focus {
+									border-color:#0da5c0;									background-color:#0da5c0;							}
+					.custom-control-input:checked~.custom-control-label::before {
+									border-color:#c469fc;									background-color:#c469fc;							}
+					.broadcast {
+									background-color:#232f3c;							}
+					.broadcast-link {
+									color:#ffffff !important;							}
+					.navbar-server {
+									color:#ffffff;									background-color:#f5365c;							}
+					.navbar-server.active {
+									background-color:#02b875;							}
+					.server-online-info {
+									color:#ffffff;									background-color:#f5365c;							}
+					.server-online-info.active {
+									background-color:#02b875;							}
+					.navbar-dark {
+									background-color:#273443;							}
+					.navbar-dark .navbar-nav .nav-link {
+									color:#ffffff !important;							}
+					.navbar-dark .navbar-nav .nav-item.active .nav-link, .navbar-dark .navbar-nav .nav-item:hover .nav-link, .navbar-dark .navbar-nav .nav-item:focus .nav-link {
+									color:#ffffff !important;									border-color:#fb6340;									background-color:#fb6340;							}
+					.navbar-dark .navbar-buttons .nav-item .nav-link {
+									border-color:#fb6340;							}
+					.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+									border-color:#fb6340;							}
+					.search-icon {
+									color:#ffffff;									background-color:#fb6340;							}
+					.footer-top {
+									background-color:#273443;							}
+					.footer-top, .footer-top ul li a {
+									color:#a9aeb4;							}
+					.footer-bottom {
+									background-color:#232f3c;							}
+					.card-header:first-child, .modal-header {
+									background-color:#fb6340;							}
+					.pagination .page-item.active .page-link, .pagination .page-item.active .page-link:hover {
+									border-color:#fb6340;									background-color:#fb6340;							}
+					.search-cancel:hover, .search-cancel:focus, .search-cancel:active {
+									color:#f5365c;							}
+					#preloader .spinner-border {
+									color:#fb6340;							}
+					#scrollUp:hover {
+									background-color:#fb6340;							}
+					.theme-color {
+									background-color:#c469fc;							}
+					.theme-color.text-primary {
+									color:#c469fc !important;									background-color:transparent;							}
+					.theme-color.btn, .theme-color.badge {
+									border-color:#c469fc;							}
+					.theme-color.btn.active, .theme-color.btn:active, .theme-color.btn:hover, .theme-color.btn:focus {
+									border-color:#c469fc;									background-color:#c469fc;							}
+			</style>
+-->
+
+<!-- CUSTOM CSS -->
+<style type="text/css">
+	.items-center{
+background: transparent;
+
+}
+.openBuyModal{
+background-color: #924999; 
+}
+.blur-\[30px\]{
+--tw-blur: blur(20px)!important;
+filter: var(--tw-blur) var(--tw-brightness) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)!important;
+}
+.opacity-50 {
+    opacity: 0.1;
+}
+
+#__heroSection :first-child div{
+  background-image: url('https://i.hizliresim.com/5e59j4q.jpg');
+  overflow: hidden;
+  background-size: contain;
+}
+#header {
+  background-color: #000000;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0, 0, 0);
+}
+.fill-voon-800 {
+    fill: rgb(0, 0, 0);
+}
+.bg-voon-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0, 0, 0);
+}
+#footer {
+    position: relative;
+    z-index: 30;
+    margin-top: auto;
+    --tw-bg-opacity: 1;
+    background-color: #000000;
+}
+.card::before, .card::after {
+    content: &quot;&quot;;
+    box-shadow: -21px 0 140px 75px rgba(255, 174, 0, 0.568);
+}
+.nav-item.active::after {
+    position: absolute;
+    left: 0px;
+    bottom: -2.75rem;
+    height: 0.5rem;
+    width: 100%;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    --tw-bg-opacity: 0.2;
+    background-color: rgb(255 174 0 / var(--tw-bg-opacity));
+    content: var(--tw-content);
+    --tw-shadow-color: rgba(255, 174, 0, 0.15);
+    --tw-shadow: var(--tw-shadow-colored);
+}
+.from-indigo-500 {
+    border-color: black;
+    border-width: 2px;
+  --tw-gradient-from: #6A0D1E;
+  --tw-gradient-to: rgba(253, 89, 68, 0.562);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.card:not(.card-simple) {
+    border-width: 2px;
+    border-color: black;
+    background-color: black;
+}
+.bg-indigo-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-width: 2px;
+    border-color: black;
+}
+.bg-indigo-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-width: 2px;
+    border-color: black;
+}
+::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+.text-indigo-600 {
+    --tw-text-opacity: 1;
+    color: rgb(255, 255, 255);
+}
+.text-indigo-500 {
+    --tw-text-opacity: 1;
+    color: rgb(255, 149, 10);
+}</style>
+	<script type="text/javascript" src="https://webkodu.ozgurlukicin.com/kod-kaynak/wk-kar-efekt.js"></script>
+    </head>
+    <body x-data="body" style="overflow: auto;">
+    <div id="app">
+                        <ul class="broadcast bg-voon-700">
+                            <li class="broadcast-item">
+                    <a class="broadcast-link" href="index.html">OEA Community</a>
+                </li>
+                    </ul>
+					    
+<script type="text/javascript" src="https://webkodu.ozgurlukicin.com/kod-kaynak/wk-kar-efekt.js"></script> 
+
+
+<header id="header" class="hidden sm:block">
+    <div class="container mx-auto flex justify-between items-center py-3 px-6 lg:px-0">
+        <div class="flex gap-20 items-center">
+                        <nav class="gap-6 lg:flex">
+                                    
+                    <script type="text/javascript" src="https://webkodu.ozgurlukicin.com/kod-kaynak/wk-kar-efekt.js"></script>
+                                            <a href="index.html" class="nav-item mr-2 active">Home</a>
+                    
+                                                                                                    
+                    
+                                            <a href="magaza.html" class="nav-item mr-2">Shop</a>
+											
+                  
+                                                </nav>
+        </div>
+        <div>
+                           
+                        
+                    <i class="fas fa-angle-right"></i>
+                </a>
+                    </div>
+    </div>
+
+</header>
+
+<!-- Mobile menu, show/hide based on menu state. -->
+<div class="sm:hidden" id="mobile-menu" x-data="{mainMenu: false}">
+    <div class="flex items-center justify-between space-y-1 px-2 pt-2 pb-3">
+        <a href="/login/">
+            <img class="h-[3rem]" src="https://www.hizliresim.com/4josu44" alt="OEA Community - Logo">
+        </a>
+
+        <!-- Mobile menu button-->
+        <button @click="mainMenu = ! mainMenu" type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Menü</span>
+            <svg x-show="!mainMenu" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg x-show="mainMenu" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+    <div x-show="mainMenu" class="space-y-1 px-2 pt-2 pb-3">
+                    
+            
+                            <a href="https://ravenrise.net//" class="text-white block px-3 py-2 rounded-md text-base font-medium bg-voon-950" aria-current="page">Home</a>
+            
+                                                            
+            
+                            <a href="https://ravenrise.net//magaza" class="text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Shop</a>
+            
+                                
+            
+                            <a href="https://ravenrise.net//kredi/yukle" class="text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Load credit</a>
+            
+                                                            
+            
+                            <a href="https://ravenrise.net//destek" class="text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Support</a>
+            
+                                
+            
+                            <a href="https://ravenrise.net//gaming-gecesi" class="text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Gaming night</a>
+            
+                                        <a href="giris.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Login</a>
+           
+            </div>
+</div>
+
+<!-- Preloader -->
+
+<section class="container mx-auto py-32 px-6 xl:px-0">
+    <h3 class="text-white font-bold text-2xl">News </h3>
+                <div class="flex flex-col justify-center grid gap-12 items-center">
+            <h1 class="text-indigo-500 uppercase font-bold text-3xl">• [08.08.2024] The Darkest Site.</h1>
+            <h1 class="text-indigo-500 uppercase font-bold text-3xl">• [08.08.2024] Interface Updated.</h1>
+
+    </section>
+
+<section class="container mx-auto px-6 xl:px-0">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div class="flex gap-4 bg-white border-b-3 border-gray-200 dark:border-green-800 relative shadow rounded-xl py-4 px-6 card dark:bg-green-800">
+            <div class="bg-cover w-20 h-20 rounded-xl bg-center relative z-10"
+                 style="background-image: url(assets/images/andreic.png)"></div>
+            <div class="px-2 py-2 relative z-10">
+                <dd class="text-white font-bold" data-toggle="onlinebox"><span class="text-indigo-500" data-toggle="onlinetext" server-ip="blocksmc.com">-/-</span> OEA Community</dd>
+            </div>
+            <span class="absolute left-1/3 bg-pink-500 w-14 z-10" style="bottom:-3px;height: 3px"></span>
+        </div>
+                <div class="flex gap-4 bg-white border-b-3 border-gray-200 dark:border-green-800 relative shadow rounded-xl py-4 px-6 card dark:bg-green-800">
+            <div class="bg-cover w-20 h-20 rounded-xl bg-center relative z-10"
+                 style="background-image: url(assets/images/andreic.png)"></div>
+            <div class="px-2 py-2 relative z-10">
+                <dd class="text-white font-bold"><span class="text-indigo-500">231</span>Times shopped</dd>
+                <a href="magaza.html" class="text-sm font-normal text-gray-400 hover:text-gray-300">Browse the store</a>
+            </div>
+            <span class="absolute left-1/3 bg-purple-500 w-14 z-10" style="bottom:-3px;height: 3px"></span>
+        </div>
+        <div class="flex gap-4 bg-white border-b-3 border-gray-200 dark:border-green-800 relative shadow rounded-xl py-4 px-6 card dark:bg-green-800">
+            <div class="bg-cover w-20 h-20 rounded-xl bg-center relative z-10"
+                 style="background-image: url(assets/images/andreic.png)"></div>
+            <div class="px-2 py-2 relative z-10">
+                <dd class="text-white font-bold"><span class="text-indigo-500">217 </span>Person Registered on Our Website</dd>
+                
+            </div>      
+            <span class="absolute left-1/3 bg-green-500 w-14 z-10" style="bottom:-3px;height: 3px"></span>
+        </div>
+        <div class="flex gap-4 bg-white border-b-3 border-gray-200 dark:border-green-800 relative shadow rounded-xl py-4 px-6 card dark:bg-green-800">
+            <div class="bg-cover w-20 h-20 rounded-xl bg-center relative z-10" style="background-image: url(assets/images/andreic.png)"></div>
+            <div class="px-2 py-2 relative z-10">
+                <dd class="text-white font-bold">OEA Community Server; </dd>
+                <a href="" class="cursor-pointer text-sm text-gray-400 hover:text-gray-300">CLICK AND JOIN</a>
+            </div>
+            <span class="absolute left-1/3 bg-indigo-500 w-14 z-10" style="bottom:-3px;height: 3px">https://discord.gg/wNePSV3C</span>
+        </div>
+    </div>
+</section>
+
+<section class="container mx-auto px-6 xl:px-0 pb-40">
+    <div class="card card-simple p-10 text-white">
+        <div class="absolute opacity-5 top-0 left-0 w-full h-full bg-cover bg-bottom" style="background-image: url('')"></div>
+        <div class="flex justify-between gap-4 items-center relative z-10">
+            <div class="flex-shrink w-full lg:w-5/12 text-center lg:text-left">
+                <h2 class="font-bold text-2xl">OEA Community - About</h2>
+                <div class="text-indigo-100/75 text-lg font-medium">
+                    We have been providing uninterrupted service and availability to our customers for 2 years with OEA Community!
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-6 lg:mt-0">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mx-auto px-6 xl:px-0 pb-40">
+    <div class="card card-simple p-10 text-white">
+        <div class="absolute opacity-5 top-0 left-0 w-full h-full bg-cover bg-bottom" style="background-image: url('')"></div>
+        <div class="flex justify-between gap-4 items-center relative z-10">
+            <div class="flex-shrink w-full lg:w-5/12 text-center lg:text-left">
+                <h2 class="font-bold text-2xl">Total Visitors</h2>
+                <div class="text-indigo-100/75 text-lg font-medium">
+                 
+                    Number of Visitors to Our Site So Far: 378
+              <div align="center"><script language="Javascript" src="http://sa.sayaclar.com/c/s4.php?a=x3w0pp9&s=1a6"></script></div>
+                   
+
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-6 lg:mt-0">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="relative z-20">
+    <div class="container mx-auto py-32 px-6 xl:px-0">
+        <div class="grid gap-12 lg:grid-cols-10 -mt-16">
+            <div class="lg:col-span-7 card card-simple p-6 text-white">
+                <div class="absolute opacity-5 top-0 left-0 w-full h-full bg-cover bg-bottom" style="background-image: url('')"></div>
+                <div class="flex flex-col justify-center gap-6 items-center">
+                    <h2 class="font-bold text-2xl">Time to get in the game!</h2>
+                    <span class="text-white/25 text-sm" data-toggle="onlinebox">Number of Active People on the Website <span class="text-indigo-600" data-toggle="onlinetext" server-ip="blocksmc.com">137</span> Online</span>
+                    <div class="text-indigo-100 text-opacity-40">
+                         Developed By bug1000
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="cursor-pointer z-20 btn-before rounded-lg bg-indigo-600 py-3 px-5 text-white btn-header-copy-ip" data-toggle="copyip" data-clipboard-action="copy" data-clipboard-text="No Copied Developer By bug1000" </"
+                    </div>
+                </div>
+            </div>
+                            
+                              
+</section>                                    </main>
+        <footer id="footer" class="bg-voon-750">
+    <div class="container mx-auto grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-0 px-6 lg:px-0 pt-8">
+        <div class="col-span-2 lg:col-span-1 flex gap-3 items-center">
+            <div class="text-sm font-medium text-indigo-300/75">
+                <p>Copyright @ OEA Community</a></p>
+                <span class="text-indigo-300/50">All rights reserved</span>
+            </div>
+            <div class="flex gap-2 ml-auto">
+                                                                                    <a href="https://discord.gg/wNePSV3C" class="text-indigo-300/75 transition hover:text-indigo-500 p-2">
+                        <i class="fab fa-discord text-lg"></i>
+                    </a>
+                            </div>
+
+
+<script src="asset//ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="asset//ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="asset//ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+<script src="asset//ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+<script src="asset//ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
+<script src="asset//ajax/libs/vanilla-lazyload/16.1.0/lazyload.min.js"></script>
+<script src="asset//ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script src="asset//ajax/libs/select2/4.0.13/js/i18n/tr.min.js"></script>
+  <script src="asset//ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+<script src="asset//apps/main/public/assets/js/store.js"  ></script><script type="text/javascript">
+  var $onlineAPI = 1;
+  var $preloaderStatus = 'false';
+</script>
+<script src="asset//apps/main/public/assets/js/main.min.js"></script>
+
+
+    </body>
+    </html>
+<script type="text/javascript" src="https://webkodu.ozgurlukicin.com/kod-kaynak/wk-kar-efekt.js"></script>
